@@ -5,12 +5,18 @@ const baseURL = ()=>{
     fetch(url)
         .then((response => response.json()))
         .then(myJson => {
-          arr.push(myJson.name);
-          arr.push(myJson.base_experience);
-          arr.push(myJson.height);
-          arr.push(myJson.id);
+            document.getElementById("image").src = myJson.sprites.front_default
+            arr.push(myJson.name);
+            arr.push(myJson.id);
+            arr.push(myJson.base_experience);
+            arr.push(myJson.height);
+            for (index in arr) {
+                param = document.getElementById("parameter" + index).innerHTML = arr[index];
+                console.log(`parameter${index} + : arr[${index}]`);
+                console.log()
+            }
         })
-    console.log(arr);
+    return arr
 }
 
 const typeURL = ()=>{
@@ -19,7 +25,6 @@ const typeURL = ()=>{
     fetch(url)
     .then((response => response.json()))
     .then(myJson => {
-
     })
 }
 
