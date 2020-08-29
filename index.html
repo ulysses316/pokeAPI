@@ -9,15 +9,16 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-danger mb-4">
+        <a class="navbar-brand" href="#">
+            <img src="./img/GDG UNAM Dark Horizontal-Logo (1).png" width="50%" alt="" loading="lazy">
+        </a>
+    </nav>
     <!-- Menu de eleccion -->
-    <h1 class="text-center">Bienvenida a la PokeAPI</h1>
-    <h2 class="text-center">Taller de GDG UNAM</h2>
     <div class="container mt-4 mb-4">
-        <div class="d-flex justify-content-center">
-            <button onclick="baseURLMenu()" class="mr-2 btn btn-warning">Pokemon or number</button>
-            <button onclick="typeURLMenu()" class="mr-2 btn btn-warning">Type</button>
-            <button onclick="abilityURLMenu()" class="mr-2 btn btn-warning">Ability</button>
-        </div>
+        <h1 class="text-center">Bienvenida a la PokeAPI</h1>
+        <h2 class="text-center">Taller de GDG UNAM</h2>
     </div>
 
     <!-- Pokemon o numero -->
@@ -27,25 +28,6 @@
             <input class="form-control text-center" id="pokemon" aria-describedby="emailHelp">
             <small id="emailHelp" class="form-text text-muted">Puedes introducir el nombre de un pokemon o un numero hasta el 893</small>
             <button onclick="baseURL()" class="mr-2 btn btn-warning mt-2">Buscar</button>
-        </div>
-    </div>
-
-    <!-- Tipo de pokemon (numero) -->
-        <div id="numberType" class="text-center container">
-            <label>¿Que tipo de pokemon quieres ver?</label>
-            <input class="form-control text-center" id="type" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">Puedes introducir un numero hasta el 18</small>
-            <button onclick="typeURL()" class="mr-2 btn btn-warning mt-2">Buscar</button>
-        </div>
-    </div>
-
-    <!-- Habilidad de pokemon (numero) -->
-    <div id="numberAbility">
-        <div class="text-center container">
-            <label>¿Que habilidad quieres ver?</label>
-            <input class="form-control text-center" id="ability" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">Puedes introducir un numero hasta el 233</small>
-            <button onclick="abilityURL()" class="mr-2 btn btn-warning mt-2">Buscar</button>
         </div>
     </div>
 

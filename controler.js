@@ -17,17 +17,28 @@ const baseURL = ()=>{
             }
         })
 }
-
+/*
 const typeURL = ()=>{
+    let arrValue = [];
     let parametro = document.getElementById("type").value;
     let url = 'https://pokeapi.co/api/v2/type/' + parametro;
     fetch(url)
     .then((response => response.json()))
     .then(myJson => {
+        let element = document.getElementById('poke-table'); 
+        element.style.display = "block";
+        document.getElementById("image").src = ""
+
+        arrValue.push(myJson.generation.name);
+        arrValue.push(myJson.name);
+        for (index in arrValue) {
+            document.getElementById("parameterValue" + index).innerHTML = arrValue[index];
+        }
     })
 }
 
 const abilityURL = ()=>{
+    let arrValue = [];
     let parametro = document.getElementById("ability").value;
     console.log(parametro)
     let url = 'https://pokeapi.co/api/v2/ability/' + parametro;
@@ -37,3 +48,5 @@ const abilityURL = ()=>{
 
     })
 }
+
+*/
