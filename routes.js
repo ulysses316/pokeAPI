@@ -1,9 +1,19 @@
 const baseURL = ()=>{
+    let arr = [];
     let parametro = document.getElementById("pokemon").value;
     let url = 'https://pokeapi.co/api/v2/pokemon/' + parametro;
     fetch(url)
         .then((response => response.json()))
-        .then(myJson => console.log(myJson))
+        .then(myJson => {
+          arr.push(myJson.name);
+          arr.push(myJson.base_experience);
+          arr.push(myJson.height);
+          arr.push(myJson.id);
+          arr.push(myJson.);
+          arr.push(myJson.);
+          arr.push(myJson.);
+        })
+    console.log(arr)
 }
 
 const typeURL = ()=>{
@@ -11,7 +21,9 @@ const typeURL = ()=>{
     let url = 'https://pokeapi.co/api/v2/type/' + parametro;
     fetch(url)
     .then((response => response.json()))
-    .then(myJson => console.log(myJson))
+    .then(myJson => {
+
+    })
 }
 
 const abilityURL = ()=>{
@@ -20,5 +32,7 @@ const abilityURL = ()=>{
     let url = 'https://pokeapi.co/api/v2/ability/' + parametro;
     fetch(url)
     .then((response => response.json()))
-    .then(myJson => console.log(myJson))
+    .then(myJson => {
+
+    })
 }
