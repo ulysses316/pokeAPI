@@ -13,19 +13,38 @@
     <h2 class="text-center">Taller de GDG UNAM</h2>
     <div class="container mt-4 mb-4">
         <div class="d-flex justify-content-center">
-            <button onclick="" class="mr-2 btn btn-warning">Pokemon or number</button>
-            <button onclick="" class="mr-2 btn btn-warning">Type</button>
-            <button onclick="" class="mr-2 btn btn-warning">Ability</button>
+            <button onclick="baseURLMenu()" class="mr-2 btn btn-warning">Pokemon or number</button>
+            <button onclick="typeURLMenu()" class="mr-2 btn btn-warning">Type</button>
+            <button onclick="abilityURLMenu()" class="mr-2 btn btn-warning">Ability</button>
         </div>
     </div>
-    
-    <form class="text-center container" action="">
-        <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, cupiditate facilis ipsum distinctio officiis sint quos, neque culpa dolorum incidunt dolore iste! Exercitationem est tempore esse quod molestias, doloremque asperiores!</p>
-        <label for="exampleInputEmail1">¿Que pokemon quieres ver?</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <small id="emailHelp" class="form-text text-muted">Puedes introducir el nombre de un pokemon o un numero hasta el</small>
-        <button class="mr-2 btn btn-warning mt-2">Buscar</button>
-    </form>
+
+    <div id="pokemonOrNumber">
+        <form class="text-center container" action="">
+            <label>¿Que pokemon quieres ver?</label>
+            <input class="form-control text-center" id="pokemon" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Puedes introducir el nombre de un pokemon o un numero hasta el 893</small>
+            <button onclick="baseURL()" class="mr-2 btn btn-warning mt-2">Buscar</button>
+        </form>
+    </div>
+
+    <div id="numberType">
+        <form class="text-center container" action="">
+            <label>¿Que tipo de pokemon quieres ver?</label>
+            <input class="form-control text-center" id="type" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Puedes introducir un numero hasta el 18</small>
+            <button onclick="typeURL()" class="mr-2 btn btn-warning mt-2">Buscar</button>
+        </form>
+    </div>
+
+    <div id="numberAbility">
+        <form class="text-center container" action="">
+            <label>¿Que habilidad quieres ver?</label>
+            <input class="form-control text-center" id="ability" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Puedes introducir un numero hasta el 233</small>
+            <button onclick="abilityURL()" class="mr-2 btn btn-warning mt-2">Buscar</button>
+        </form>
+    </div>
     <!-- Scripts -->
     <script  src="./routes.js"></script>    
     <script  src="./main.js"></script>
