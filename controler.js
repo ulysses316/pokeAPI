@@ -9,11 +9,8 @@ const baseURL = ()=>{
           arr.push(myJson.base_experience);
           arr.push(myJson.height);
           arr.push(myJson.id);
-          arr.push(myJson.);
-          arr.push(myJson.);
-          arr.push(myJson.);
         })
-    console.log(arr)
+    console.log(arr);
 }
 
 const typeURL = ()=>{

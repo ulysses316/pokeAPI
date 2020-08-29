@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Menu de eleccion -->
     <h1 class="text-center">Bienvenida a la PokeAPI</h1>
     <h2 class="text-center">Taller de GDG UNAM</h2>
     <div class="container mt-4 mb-4">
@@ -19,6 +20,7 @@
         </div>
     </div>
 
+    <!-- Pokemon o numero -->
     <div id="pokemonOrNumber">
         <div class="text-center container">
             <label>¿Que pokemon quieres ver?</label>
@@ -28,7 +30,7 @@
         </div>
     </div>
 
-    <div id="numberType">
+    <!-- Tipo de pokemon (numero) -->
         <div class="text-center container">
             <label>¿Que tipo de pokemon quieres ver?</label>
             <input class="form-control text-center" id="type" aria-describedby="emailHelp">
@@ -37,6 +39,7 @@
         </div>
     </div>
 
+    <!-- Habilidad de pokemon (numero) -->
     <div id="numberAbility">
         <div class="text-center container">
             <label>¿Que habilidad quieres ver?</label>
@@ -45,9 +48,27 @@
             <button onclick="abilityURL()" class="mr-2 btn btn-warning mt-2">Buscar</button>
         </div>
     </div>
+
+    <!-- Tabla de resultados -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <img id="img-pokemon" src="" alt="">
+            </div>
+            <div id="parameter1" class="col-6 text-center"></div>
+            <div id="parameterValue1" class="col-6 text-center"></div>
+            <div id="parameter2" class="col-6 text-center"></div>
+            <div id="parameterValue2" class="col-6 text-center"></div>
+            <div id="parameter3" class="col-6 text-center"></div>
+            <div id="parameterValue3" class="col-6 text-center"></div>
+            <div id="parameter4" class="col-6 text-center"></div>
+            <div id="parameterValue4" class="col-6 text-center"></div>                                    
+        </div>
+    </div>
+
     <!-- Scripts -->
-    <script  src="./routes.js"></script>    
     <script  src="./main.js"></script>
+    <script  src="./controler.js"></script>
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
